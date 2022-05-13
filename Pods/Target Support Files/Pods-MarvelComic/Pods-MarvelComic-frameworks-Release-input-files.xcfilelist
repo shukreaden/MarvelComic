@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MarvelComic/Pods-MarvelComic-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Alamofire-Synchronous/Alamofire_Synchronous.framework
