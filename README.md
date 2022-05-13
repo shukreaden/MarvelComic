@@ -7,7 +7,7 @@ Marvel comic application that displays a single comic title, description, and co
 In order to use the app with your own developer keys follow steps below,
 Steps:
  * Open the MarvelComicService.swift file under MarvelComic/MarvelComic/Services/
- * In the MarvelComicApiConstants struct at the top of the MarvelComicService.swift file, simply replace the empty strings for public key and private key with yours
+ * In the MarvelComicApiConstants struct at the top of the MarvelComicService.swift file, simply replace the strings "INSERT_YOUR_PUBLIC_KEY_HERE" and "INSERT_YOUR_PRIVATE_KEY_HERE" with your public key and private key.
 If you also want to show your own comic of choice replace the added Black panther comic id(67869) with your own!
 
 ## Acknowledgements
@@ -20,11 +20,7 @@ If you also want to show your own comic of choice replace the added Black panthe
 
 ## Demo
 
-https://www.kapwing.com/videos/627df7d57999730058c89e00
-
-## Screenshots
-
-![iPhone 13](https://ibb.co/f9FnXhV)
-![iPhone 13 pro max](https://ibb.co/5Gz1JHc)
-![iPhone SE](https://ibb.co/PQZR2MR)
-![iPad Pro](https://ibb.co/0ZNRXr5)
+ - [iPhone 13 pro](https://www.kapwing.com/videos/627dfef0d8cb11008bbb7b57)
+ - [iPhone 13 pro Max](https://www.kapwing.com/videos/627dff461438ee00ac591774)
+ - [iPad pro](https://www.kapwing.com/videos/627dff6ad9aa430089ed20c2)
+ - [iPhone SE](https://www.kapwing.com/videos/627dff934cfce20082f775cf)
