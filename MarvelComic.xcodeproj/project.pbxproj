@@ -10,6 +10,8 @@
 		060F4A27282D846700EC9B91 /* MarvelComicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F4A26282D846700EC9B91 /* MarvelComicService.swift */; };
 		060F4A2A282D84DB00EC9B91 /* MarvelComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F4A29282D84DB00EC9B91 /* MarvelComic.swift */; };
 		063736D0282DC7ED007D7388 /* MarvelComicBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063736CF282DC7ED007D7388 /* MarvelComicBlur.swift */; };
+		06623C13282E26C60038E5DE /* MarvelComic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F4A29282D84DB00EC9B91 /* MarvelComic.swift */; };
+		06BF94B4282E250E00A7D41E /* MarvelComicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060F4A26282D846700EC9B91 /* MarvelComicService.swift */; };
 		06DF2B2D282C90DD00C27D22 /* MarvelComicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF2B2C282C90DD00C27D22 /* MarvelComicApp.swift */; };
 		06DF2B2F282C90DD00C27D22 /* MarvelComicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DF2B2E282C90DD00C27D22 /* MarvelComicView.swift */; };
 		06DF2B31282C90DF00C27D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DF2B30282C90DF00C27D22 /* Assets.xcassets */; };
@@ -444,7 +446,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06BF94B4282E250E00A7D41E /* MarvelComicService.swift in Sources */,
 				06DF2B3E282C90DF00C27D22 /* MarvelComicTests.swift in Sources */,
+				06623C13282E26C60038E5DE /* MarvelComic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

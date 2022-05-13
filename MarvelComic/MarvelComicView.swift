@@ -85,11 +85,13 @@ struct MarvelComicView: View {
                     MarvelComicBlur(style: .light)
                     HStack() {
                         AsyncImage(url: URL(string: comic.thumbnail.path + "." + comic.thumbnail.thumbnailExtension), scale: 3.8)
+                            .accessibility(identifier: "comic_image")
                         Spacer()
                         VStack() {
                             Button(action: {}, label: {
                                 ComicAccessoryButtonTextStyle(text: "READ NOW", scaleFactor: 0.030, leading: false)
                             }).buttonStyle(ReadNowButtonStyle())
+                                .accessibility(identifier: "read_now_button")
                             Button(action: {}, label: {
                                 HStack() {
                                     Image(systemName: "checkmark.circle.fill")
@@ -97,6 +99,7 @@ struct MarvelComicView: View {
                                     ComicAccessoryButtonTextStyle(text: "MARK AS READ", leading: true)
                                 }
                             }).buttonStyle(ComicAccessoryButtonStyle())
+                                .accessibility(identifier: "mark_as_read_button")
                             
                             Button(action: {}, label: {
                                 HStack() {
@@ -105,6 +108,7 @@ struct MarvelComicView: View {
                                     ComicAccessoryButtonTextStyle(text: "ADD TO LIBRARY", leading: true)
                                 }
                             }).buttonStyle(ComicAccessoryButtonStyle())
+                                .accessibility(identifier: "add_to_library_button")
                             Button(action: {}, label: {
                                 HStack() {
                                     Image(systemName: "arrow.down.to.line.compact")
@@ -112,6 +116,7 @@ struct MarvelComicView: View {
                                     ComicAccessoryButtonTextStyle(text: "READ OFFLINE", leading: true)
                                 }
                             }).buttonStyle(ComicAccessoryButtonStyle())
+                                .accessibility(identifier: "read_offline_button")
                         }
                     }
                     .padding()
@@ -122,6 +127,7 @@ struct MarvelComicView: View {
                             .foregroundColor(Color.comicWhite)
                             .font(.largeTitle.weight(.light))
                             .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                            .accessibility(identifier: "comic_title")
                         Spacer()
                         Divider().background(Color.comicWhite)
                         Text("The Story")
@@ -132,6 +138,7 @@ struct MarvelComicView: View {
                         Text(comic.resultDescription.trimmingLeadingAndTrailingSpaces())
                             .foregroundColor(Color.comicWhite)
                             .font(.body.weight(.light))
+                            .accessibility(identifier: "comic_description")
                     }
                 }
                 Spacer()
