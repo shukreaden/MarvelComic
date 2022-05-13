@@ -19,7 +19,7 @@ If you also want to show your own comic of choice replace the added Black panthe
  - Various Youtube videos and articles not listed here to help me with my first time using SwiftUI
 
 
-## Demo
+## Demo(different sized iOS devices)
 
  - [iPhone 13 pro](https://www.kapwing.com/videos/627dfef0d8cb11008bbb7b57)
  - [iPhone 13 pro Max](https://www.kapwing.com/videos/627dff461438ee00ac591774)
