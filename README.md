@@ -12,7 +12,7 @@ If you also want to show your own comic of choice replace the added Black panthe
 
 ## Acknowledgements
 
- - [Swift UI Library Usage](https://developer.apple.com/documentation/swiftui/) First time!
+ - [Swift UI Library Usage](https://developer.apple.com/documentation/swiftui/)
   - [Marvel Api Documentation](https://developer.marvel.com/docs)
  - [Alamofire Synchronous Library Usage by Dalodd](https://github.com/Dalodd/Alamofire-Synchronous)
  - [MD5 hash generator from zaph answer on stack overflow](https://stackoverflow.com/questions/32163848/how-can-i-convert-a-string-to-an-md5-hash-in-ios-using-swift)
