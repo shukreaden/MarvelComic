@@ -3,6 +3,13 @@
 Marvel comic application that displays a single comic title, description, and cover image via the comic endpoint from Marvels Api(https://gateway.marvel.com:443/v1/public/comics/). Also adds UI tests for checking that the comic's content is displayed properly(shows comic image, title, and description as well as shows comic accessory buttons -> "read now", "mark as read", "add to library" and "read offline"). Also adds a single unit test for making sure the timestamp added to the Marvel api call is formatted correctly.
 
 
+## Usage
+In order to use the app with your own developer keys follow steps below,
+Steps:
+ - Open the MarvelComicService.swift file under MarvelComic/MarvelComic/Services/
+ - In the MarvelComicApiConstants struct at the top of the MarvelComicService.swift file, simply replace the empty strings for public key and private key with yours
+If you also want to show your own comic of choice replace the added Black panther comic id(67869) with your own!
+
 ## Acknowledgements
 
  - [Swift UI Library Usage](https://developer.apple.com/documentation/swiftui/)
