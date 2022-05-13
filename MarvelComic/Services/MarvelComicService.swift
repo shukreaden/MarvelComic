@@ -18,8 +18,8 @@ import typealias CommonCrypto.CC_LONG
 struct MarvelComicApiConstants {
     static let apiEndpoint = "https://gateway.marvel.com:443/v1/public/comics/"
     static let comicId = "67869"
-    static let publicKey = "28337a775af2473f6d789fd07f7dd65e"
-    static let privateKey = "d1cb7f0ac7264e19e376401286314e7c2e9f1650"
+    static let publicKey = "INSERT_YOUR_PUBLIC_KEY_HERE"
+    static let privateKey = "INSERT_YOUR_PRIVATE_KEY_HERE"
 }
 
 class MarvelComicService {
