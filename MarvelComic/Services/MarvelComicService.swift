@@ -34,27 +34,27 @@ class MarvelComicService {
             "hash" : hash,
         ]
         let response = Alamofire.request(MarvelComicApiConstants.apiEndpoint + MarvelComicApiConstants.comicId, parameters: params).responseData()
-            let decoder = JSONDecoder()
+        let decoder = JSONDecoder()
         let comic = try? decoder.decode(Comic.self, from: response.value!)
         return comic!
     }
-
+    
     func generateMD5(string: String) -> Data {
-            let length = Int(CC_MD5_DIGEST_LENGTH)
-            let messageData = string.data(using:.utf8)!
-            var digestData = Data(count: length)
-
-            _ = digestData.withUnsafeMutableBytes { digestBytes -> UInt8 in
-                messageData.withUnsafeBytes { messageBytes -> UInt8 in
-                    if let messageBytesBaseAddress = messageBytes.baseAddress, let digestBytesBlindMemory = digestBytes.bindMemory(to: UInt8.self).baseAddress {
-                        let messageLength = CC_LONG(messageData.count)
-                        CC_MD5(messageBytesBaseAddress, messageLength, digestBytesBlindMemory)
-                    }
-                    return 0
+        let length = Int(CC_MD5_DIGEST_LENGTH)
+        let messageData = string.data(using:.utf8)!
+        var digestData = Data(count: length)
+        
+        _ = digestData.withUnsafeMutableBytes { digestBytes -> UInt8 in
+            messageData.withUnsafeBytes { messageBytes -> UInt8 in
+                if let messageBytesBaseAddress = messageBytes.baseAddress, let digestBytesBlindMemory = digestBytes.bindMemory(to: UInt8.self).baseAddress {
+                    let messageLength = CC_LONG(messageData.count)
+                    CC_MD5(messageBytesBaseAddress, messageLength, digestBytesBlindMemory)
                 }
+                return 0
             }
-            return digestData
         }
+        return digestData
+    }
     
     func generateTimeStamp() -> String {
         let date = Date()
