@@ -6,8 +6,8 @@ Marvel comic application that displays a single comic title, description, and co
 ## Usage
 In order to use the app with your own developer keys follow steps below,
 Steps:
- - Open the MarvelComicService.swift file under MarvelComic/MarvelComic/Services/
- - In the MarvelComicApiConstants struct at the top of the MarvelComicService.swift file, simply replace the empty strings for public key and private key with yours
+ * Open the MarvelComicService.swift file under MarvelComic/MarvelComic/Services/
+ * In the MarvelComicApiConstants struct at the top of the MarvelComicService.swift file, simply replace the empty strings for public key and private key with yours
 If you also want to show your own comic of choice replace the added Black panther comic id(67869) with your own!
 
 ## Acknowledgements
